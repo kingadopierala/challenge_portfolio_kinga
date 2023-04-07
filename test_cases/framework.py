@@ -1,10 +1,16 @@
 import os
 import unittest
 from selenium import webdriver
-from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
+from selenium.webdriver.chrome.service import Service
+
+DRIVER_PATH = '/Users/user/Desktop/challenge_portfolio_kinga/drivers/chromedriver'
+service = Service(DRIVER_PATH)
+IMPLICITLY_WAIT = 40
+driver = webdriver.Chrome(service=service)
 
 
 class Test(unittest.TestCase):
+
 
     @classmethod
     def setUp(self):
