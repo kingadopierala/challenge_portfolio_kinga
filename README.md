@@ -6,3 +6,44 @@ I have been a manual tester for over a year. At work, I test mobile applications
 *Subtask 2: GET ISTB - Test Result*
 
 Correct answers: 8/14
+
+# Task 1: Selectors
+
+Login
+
+* //*[@id="login"]
+* /html/body/div/form/div/div[1]/div[1]/div/input
+
+Password
+
+* //*[@id="password"]
+* /html/body/div/form/div/div[1]/div[2]/div/input
+
+Remind Password
+
+* //*[@id="__next"]/form/div/div[1]/a
+* /html/body/div/form/div/div[1]/a
+
+E-mail
+  
+* //*[@id="__next"]/div[1]/div/div[1]/div/div/input
+* /html/body/div/div[1]/div/div[1]/div/div/input
+  
+Back to sign in
+
+* //*[@id="__next"]/div[1]/div/div[1]/a
+* /html/body/div/div[1]/div/div[1]/a
+
+Send
+
+* //*[@id="__next"]/div[1]/div/div[2]/button/span[1]
+* /html/body/div/div[1]/div/div[2]/button/span[1]
+
+Sign In
+
+* //*[@id="__next"]/form/div/div[2]/button/span[1]
+* /html/body/div/form/div/div[2]/button/span[1]
+
+
+
+
