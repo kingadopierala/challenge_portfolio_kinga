@@ -3,8 +3,8 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
-DRIVER_PATH = '/Users/user/Desktop/challenge_portfolio_kinga/drivers/chromedriver'
-service = Service(DRIVER_PATH)
+DRIVER_PATH: str = '/Users/user/Desktop/challenge_portfolio_kinga/drivers/chromedriver'
+service = Service(executable_path=DRIVER_PATH)
 IMPLICITLY_WAIT = 40
 driver = webdriver.Chrome(service=service)
 
@@ -23,6 +23,7 @@ class Test(unittest.TestCase):
     @classmethod
     def tearDown(self):
         self.driver.quit()
+
 
     def test_print_nice_words(self):
         print("WELL DONE!!!!!!!!!")
